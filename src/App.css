@@ -1,38 +1,207 @@
 .App {
-  text-align: center;
+  text-align: center;  
+  transition: background-color 0.1s, color 0.1s;
+  padding-top: 60px;
+  position: relative; /* Added to make `.Paragraf` align to this */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top:  2rem;
+  margin-top: -75px;
+  gap: 100px;
+  margin-bottom: -150px;
+  margin-left: 70px;
+}  
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .grid-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
   }
+  
+  .grid-item {
+    font-size: 1.5em;
+    font-weight: bold;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px; /* Circle size */
+    height: 100px; /* Circle size */ /* Makes the border round */
+    pointer-events: auto;
+    text-align: center;
+    
+  }
+ 
+  
+  .grid-item .icon {
+    font-size: 2em; /* Size of the icon */
+    line-height:0.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .grid-item p {
+    margin: 0; /* Remove margin around the text */
+    padding: -1px; /* Remove padding around the text */
+    font-size: 1em; /* Adjust text size if needed */
+  }
+  
+  .grid-item.profil {
+    top: 15%;
+    left: 25%;
+    z-index: 5;
+  }
+  
+  .grid-item.project {
+    top: 25%;
+    right: 30%;
+    z-index: 5;
+  }
+  
+  .grid-item.education {
+    bottom: 20%;
+    left: 25%;
+    z-index: 5;
+  }
+  
+  .grid-item.experience {
+    bottom: 10%;
+    right: 30%;
+    z-index:5 ;
+    
+  }
+  .download-cv {
+    position: relative;
+    text-align: end;
+    z-index: 5;
+    margin-top: -45px;
+    margin-right: 100px;
+ 
+   
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.download-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #4A90E2; /* Adjust to your theme */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+   
+
+}
+
+.download-button:hover {
+    background-color: #357ABD; /* Darker shade on hover */
+}
+
+.download-button .icon {
+    margin-right: 8px;
+}
+
+  
+.icon {
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: color 0.3s;
+  margin-right: 20px;
+}
+.Navbar{
+  
+  display: flex;
+ 
+
+}
+
+.icon:hover {
+  color: #dde116;
+}
+.App.light {
+  background-color: #114cd5;
+  color: #0c0c0c;
+}
+
+.App.dark {
+  background-color: #0f0f0f;
+  color: #f6f1f1;
+}
+
+.Paragraf {
+  position: absolute; /* Added to bring text on top */
+  top: 50%; /* Centers vertically */
+  left: 50%; /* Centers horizontally */
+  transform: translate(-50%, -50%); /* Centers fully */
+  font-size: 2em;
+  font-weight: bolder;
+  z-index: 5; /* Ensures text is above 3D scene */
+  color: inherit;
+  pointer-events: none; /* Allows clicks to pass through to 3D scene */
+}
+
+
+.earth-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px; /* Adjust as needed */
+  height: 200px; /* Adjust as needed */
+}
+
+.profile-content {
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: white; /* Adjust color as needed */
 }
 
-.App-link {
-  color: #61dafb;
+.profile-content .icon {
+  font-size: 2rem; /* Adjust as needed */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+/* General button styles */
+button {
+  margin: 10px;
+  padding: 10px 15px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
+
+/* Light theme styles */
+.App.light button {
+  color: #000; /* Dark text for light theme */
+}
+
+.App.light button:hover {
+  color: #767674; /* Optional hover color */
+}
+
+/* Dark theme styles */
+.App.dark button {
+  color: #f6f1f1; /* Light text for dark theme */
+}
+
+.App.dark button:hover {
+  color: #8d8d8b; /* Optional hover color */
+}
+
+
+
+

@@ -1,0 +1,257 @@
+.modal1-overlay {
+    margin-top: -450px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    text-align: justify;
+}
+
+.modal1-content {   
+    max-width: 600px;
+ margin-top: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    text-align: justify;
+}
+
+
+.Navbar{
+    justify-content: flex-end;
+    margin-top: -65px;
+
+  }
+  .profile-card {
+    max-width: 400px;
+    margin: 20px auto; /* Center the card */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    color: inherit; /* Adapt to theme */
+}
+/* Modal styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+   background-color: gray;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    text-align: justify;
+}
+
+.modal-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.see-details-button {
+    background-color: #4a90e2; /* Customize color as desired */
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.see-details-button:hover {
+    background-color: #357ABD; /* Darker shade on hover */
+}
+
+
+.card {
+    margin-top: 10px; /* Space between title and card content */
+    padding: 15px;
+    border: 1px solid #ccc; /* Border around the card */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #ffffff;
+    z-index: 5; /* White background for card */
+}
+/* Starry background */
+.portfolio {
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    height: 90vh; /* Adjust height if necessary */
+    overflow: hidden;
+    /* Dark background for space effect */
+}
+.project-card {
+   
+    position: relative;
+    background-color:transparent;
+    border-radius: 8px;
+    padding: 16px;
+    width: 720px;
+    
+    text-align: center;
+    margin: 0 auto;
+}
+
+.project-content {
+    margin-top: -500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:transparent;
+    text-align :justify;
+    
+}
+/* Style.css */
+
+.Deskripsi {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limits text to 2 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+    max-width: 70%;
+}
+
+.see-details-button {
+    background-color: #4a90e2; /* Customize color as desired */
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.see-details-button:hover {
+    background-color: #357ABD; /* Darker shade on hover */
+}
+
+.project-image {
+    width: 250px;
+    height: 150px;
+   
+    margin: 8px 0;
+}
+.Contact {
+    position: fixed;
+    text-align: start;
+    margin-top: 20px;
+    justify-content: flex-start;
+    margin-top: -280px;
+
+    margin-left: 30px;
+   
+    z-index:10000 ;
+   
+   
+}
+
+.Contact img {
+    width: 150px;
+    height: 150px;
+    margin-left: 20px;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+.contact-info {
+    
+    margin-top: 5px;
+    font-size: 16px;
+   
+    
+    
+}
+
+.contact-info p {
+    margin: 5px 0; /* Add space between each contact detail */
+    font-size: 16px; /* Adjust font size if needed */
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+}
+.contact-info p .fa-icon {
+    margin-right: 8px;
+    color: #4a90e2; /* Customize icon color */
+}
+
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #f7f5f9;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+    margin-top: -380px;
+}
+
+.left-arrow {
+    z-index: 10;
+    left: -30px; /* Adjust as needed */
+}
+
+.right-arrow {
+    z-index: 1o;
+    right: -30px; /* Adjust as needed */
+}
+
+.arrow:hover {
+    color: #e9e8ea;
+}
+.unstyled-link {
+    color: inherit; /* Inherit color from parent */
+    text-decoration: none; /* Remove underline */
+}
+
+.unstyled-link:hover {
+    color: inherit; /* Ensure color doesn’t change on hover */
+}
+
+
+
+/* Shooting star container */
+
+
+.profile-card h2 {
+    text-align: center; /* Center the title */
+    margin-bottom: 10px; /* Space below title */
+}
+
+.card h3 {
+    margin: 0; /* Remove default margin */
+}
+
+.card p {
+    margin: 5px 0; /* Space between paragraphs */
+}
