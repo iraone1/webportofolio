@@ -21,11 +21,23 @@ const Education = () => {
             </div>
             <section className="portfolio">
                 <MySaturn />
-                <div className="modal1-overlay" >
-                <div className="modal1-content">
-                    <p style={{fontWeight:'bolder'}}>Hello, my name is Muhammad Irawan. I am a computer science graduate. I was born in Kudus on June 7, 2000. I am a Muslim. I like space.</p>          
+                <div className="modal2-overlay" >
+                    <div className="modal2-content">
+                            <ul>
+                                <h1 style={{fontWeight:"bolder",fontSize:"30px",textAlign:"center"}}>Education</h1>
+                                <li>
+                                    <h3 style={{fontWeight:"bolder",fontSize:"20px"}}>Bachelor ,University 'Aisyiyah Yogyakarta</h3>
+                                    <p>2020 - 2024</p>
+                                    <p>Information Technology</p>
+                                </li>
+                                <li>
+                                    <h3 style={{fontWeight:"bolder",fontSize:"20px"}}>High School, SMAN 2 Pangkalan Bun</h3>
+                                    <p>2016 - 2019</p>
+                                    <p>Mathematics and Natural Sciences.</p>
+                                </li>
+                            </ul>
+                   </div>
                 </div>
-            </div>
             </section>
         </div>
     );

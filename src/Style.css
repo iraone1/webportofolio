@@ -16,6 +16,38 @@
     text-align: justify;
 }
 
+.modal2-overlay {
+    margin-top: -550px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    text-align: justify;
+}
+
+.modal2-content {   
+    max-width: 600px;
+    box-shadow: 0 5px 15px rgba(191, 44, 44, 0.3);
+    position: relative;
+    text-align: justify;
+}
+.modal3-overlay {
+    margin-top: -580px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    text-align: justify;
+}
+
+.modal3-content {   
+    max-width: 600px;
+    box-shadow: 0 5px 15px rgba(191, 44, 44, 0.3);
+    position: relative;
+    text-align: justify;
+}
 
 .Navbar{
     justify-content: flex-end;
