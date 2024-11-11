@@ -1,5 +1,5 @@
-.modal1-overlay {
-    margin-top: -450px;
+/* General styles */
+.modal1-overlay, .modal2-overlay, .modal3-overlay {
     position: relative;
     display: flex;
     align-items: center;
@@ -8,69 +8,35 @@
     text-align: justify;
 }
 
-.modal1-content {   
+.modal1-content, .modal2-content, .modal3-content {
     max-width: 600px;
- margin-top: 50px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     position: relative;
     text-align: justify;
 }
 
-.modal2-overlay {
-    margin-top: -550px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-    text-align: justify;
-}
-
-.modal2-content {   
-    max-width: 600px;
-    box-shadow: 0 5px 15px rgba(191, 44, 44, 0.3);
-    position: relative;
-    text-align: justify;
-}
-.modal3-overlay {
-    margin-top: -580px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-    text-align: justify;
-}
-
-.modal3-content {   
-    max-width: 600px;
-    box-shadow: 0 5px 15px rgba(191, 44, 44, 0.3);
-    position: relative;
-    text-align: justify;
-}
-
-.Navbar{
+.Navbar {
     justify-content: flex-end;
     margin-top: -65px;
-
-  }
-  .profile-card {
-    max-width: 400px;
-    margin: 20px auto; /* Center the card */
-    padding: 20px;
-    background-color: #f9f9f9; /* Light background */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-    color: inherit; /* Adapt to theme */
 }
-/* Modal styles */
+
+.profile-card {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: inherit;
+}
+
 .modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,7 +44,7 @@
 }
 
 .modal-content {
-   background-color: gray;
+    background-color: gray;
     padding: 20px;
     border-radius: 8px;
     max-width: 500px;
@@ -106,7 +72,7 @@
 }
 
 .see-details-button {
-    background-color: #4a90e2; /* Customize color as desired */
+    background-color: #4a90e2;
     color: white;
     padding: 5px 10px;
     border: none;
@@ -116,35 +82,34 @@
 }
 
 .see-details-button:hover {
-    background-color: #357ABD; /* Darker shade on hover */
+    background-color: #357ABD;
 }
-
 
 .card {
-    margin-top: 10px; /* Space between title and card content */
+    margin-top: 10px;
     padding: 15px;
-    border: 1px solid #ccc; /* Border around the card */
-    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc;
+    border-radius: 5px;
     background-color: #ffffff;
-    z-index: 5; /* White background for card */
+    z-index: 5;
 }
-/* Starry background */
+
+/* Portfolio section */
 .portfolio {
     margin-top: 10px;
     position: relative;
     width: 100%;
-    height: 90vh; /* Adjust height if necessary */
+    height: 90vh;
     overflow: hidden;
-    /* Dark background for space effect */
 }
+
+/* Project Card */
 .project-card {
-   
     position: relative;
-    background-color:transparent;
+    background-color: transparent;
     border-radius: 8px;
     padding: 16px;
     width: 720px;
-    
     text-align: center;
     margin: 0 auto;
 }
@@ -154,15 +119,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:transparent;
-    text-align :justify;
-    
+    background-color: transparent;
+    text-align: justify;
 }
-/* Style.css */
 
 .Deskripsi {
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* Limits text to 2 lines */
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -170,38 +133,15 @@
     max-width: 70%;
 }
 
-.see-details-button {
-    background-color: #4a90e2; /* Customize color as desired */
-    color: white;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 0.9em;
-}
-
-.see-details-button:hover {
-    background-color: #357ABD; /* Darker shade on hover */
-}
-
-.project-image {
-    width: 250px;
-    height: 150px;
-   
-    margin: 8px 0;
-}
+/* Contact section */
 .Contact {
     position: fixed;
     text-align: start;
     margin-top: 20px;
     justify-content: flex-start;
     margin-top: -280px;
-
     margin-left: 30px;
-   
-    z-index:10000 ;
-   
-   
+    z-index: 10000;
 }
 
 .Contact img {
@@ -213,40 +153,39 @@
 }
 
 .contact-info {
-    
     margin-top: 5px;
     font-size: 16px;
-   
-    
-    
 }
 
 .contact-info p {
-    margin: 5px 0; /* Add space between each contact detail */
-    font-size: 16px; /* Adjust font size if needed */
+    margin: 5px 0;
+    font-size: 16px;
     display: flex;
     align-items: center;
-    gap: 8px; /* Space between icon and text */
+    gap: 8px;
 }
+
 .contact-info p .fa-icon {
     margin-right: 8px;
-    color: #4a90e2; /* Customize icon color */
+    color: #4a90e2;
 }
+
 .large-icon {
-    font-size: 1.5rem; /* Adjust as desired */
+    font-size: 1.5rem;
 }
+
 .skill-list li {
     font-size: 18px;
     margin: 8px 0;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Align items on both ends */
+    justify-content: space-between;
 }
 
 .skill-stars {
     font-size: 18px;
-    color: gold; /* Set color of stars */
-    margin-left: auto; /* Push stars to the right */
+    color: gold;
+    margin-left: auto;
 }
 
 .skill {
@@ -254,7 +193,7 @@
     justify-content: flex-end;
     margin-top: -250px;
     margin-left: 1170px;
-    z-index:10000 ;
+    z-index: 10000;
 }
 
 .skill-list {
@@ -272,10 +211,7 @@
 .skill-icon {
     font-size: 1.5rem;
     margin-right: 10px;
-    
 }
-
-
 
 .arrow {
     position: absolute;
@@ -293,41 +229,128 @@
 
 .left-arrow {
     z-index: 10;
-    left: -30px; /* Adjust as needed */
+    left: -30px;
 }
 
 .right-arrow {
-    z-index: 1o;
-    right: -30px; /* Adjust as needed */
+    z-index: 10;
+    right: -30px;
 }
 
 .arrow:hover {
     color: #e9e8ea;
 }
+
 .unstyled-link {
-    color: inherit; /* Inherit color from parent */
-    text-decoration: none; /* Remove underline */
+    color: inherit;
+    text-decoration: none;
     font-size: large;
 }
 
 .unstyled-link:hover {
-    color: inherit; /* Ensure color doesn’t change on hover */
+    color: inherit;
 }
 
+/* Media queries for responsiveness */
 
+/* For small devices like phones */
+@media (max-width: 768px) {
+    .modal1-content, .modal2-content, .modal3-content, .modal-content {
+        width: 90%;
+        padding: 15px;
+    }
 
-/* Shooting star container */
+    .profile-card {
+        width: 80%;
+        margin: 20px auto;
+    }
 
+    .portfolio {
+        height: 60vh; /* Adjust height for small screens */
+    }
 
-.profile-card h2 {
-    text-align: center; /* Center the title */
-    margin-bottom: 10px; /* Space below title */
+    .project-card {
+        width: 90%;
+    }
+
+    .project-image {
+        width: 200px;
+        height: 120px;
+    }
+
+    .skill-list li {
+        font-size: 16px; /* Smaller font for small screens */
+    }
+
+    .arrow {
+        font-size: 20px;
+    }
+
+    .left-arrow, .right-arrow {
+        left: 0;
+        right: 0;
+    }
 }
 
-.card h3 {
-    margin: 0; /* Remove default margin */
+/* For medium devices like tablets */
+@media (max-width: 1024px) {
+    .modal1-content, .modal2-content, .modal3-content, .modal-content {
+        width: 80%;
+        padding: 18px;
+    }
+
+    .portfolio {
+        height: 70vh;
+    }
+
+    .project-card {
+        width: 80%;
+    }
+
+    .project-image {
+        width: 220px;
+        height: 130px;
+    }
+
+    .skill-list li {
+        font-size: 17px;
+    }
+
+    .arrow {
+        font-size: 22px;
+    }
+
+    .left-arrow, .right-arrow {
+        left: 10px;
+        right: 10px;
+    }
 }
 
-.card p {
-    margin: 5px 0; /* Space between paragraphs */
+/* For large screens like desktops */
+@media (min-width: 1200px) {
+    .modal1-content, .modal2-content, .modal3-content, .modal-content {
+        width: 600px;
+    }
+
+    .portfolio {
+        height: 90vh;
+    }
+
+    .project-card {
+        width: 720px;
+    }
+
+    .project-image {
+        width: 250px;
+        height: 150px;
+    }
+
+    .arrow {
+        font-size: 24px;
+    }
+
+    .left-arrow, .right-arrow {
+        left: -30px;
+        right: -30px;
+    }
 }
