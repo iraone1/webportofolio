@@ -125,7 +125,203 @@
 
 }
 
-.icon:hover {
+.icon:hover {/* Default styling for large screens */
+  .App {
+    text-align: center;  
+    transition: background-color 0.1s, color 0.1s;
+    padding-top: 60px;
+    position: relative;
+  }
+  
+  .header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 2rem;
+    margin-top: -75px;
+    gap: 100px;
+    margin-bottom: -150px;
+    margin-left: 70px;
+  }
+  
+  .grid-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+  }
+  
+  .grid-item {
+    font-size: 1.5em;
+    font-weight: bold;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    pointer-events: auto;
+    text-align: center;
+  }
+  
+  .grid-item .icon {
+    font-size: 2em;
+    line-height: 0.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .grid-item p {
+    margin: 0;
+    padding: -1px;
+    font-size: 1em;
+  }
+  
+  /* Position adjustments */
+  .grid-item.profil { top: 15%; left: 25%; }
+  .grid-item.project { top: 25%; right: 30%; }
+  .grid-item.education { bottom: 20%; left: 25%; }
+  .grid-item.experience { bottom: 10%; right: 30%; }
+  
+  .download-cv {
+    position: relative;
+    text-align: end;
+    z-index: 5;
+    margin-top: -45px;
+    margin-right: 100px;
+  }
+  
+  .download-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #4A90E2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .download-button:hover {
+    background-color: #357ABD;
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s;
+    margin-right: 20px;
+  }
+  
+  .Navbar { display: flex; }
+  
+  .icon:hover { color: #dde116; }
+  
+  .App.light { background-color: #507fee; color: #0c0c0c; }
+  .App.dark { background-color: #0f0f0f; color: #f6f1f1; }
+  
+  .Paragraf {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    font-weight: bolder;
+    z-index: 5;
+    color: inherit;
+    pointer-events: none;
+  }
+  
+  .earth-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .profile-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+  
+  .profile-content .icon {
+    font-size: 2.5rem;
+  }
+  
+  button {
+    margin: 10px;
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+  }
+  
+  /* Light theme styles */
+  .App.light button { color: #000; }
+  .App.light button:hover { color: #767674; }
+  
+  /* Dark theme styles */
+  .App.dark button { color: #f6f1f1; }
+  .App.dark button:hover { color: #8d8d8b; }
+  
+  /* Media queries for responsive layout */
+  @media (max-width: 768px) {
+    .header {
+      gap: 30px;
+      justify-content: space-between;
+    }
+  
+    .grid-item {
+      width: 80px;
+      height: 80px;
+      font-size: 1.2em;
+    }
+  
+    .download-cv {
+      margin-right: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-left: 0;
+    }
+  
+    .grid-item {
+      width: 60px;
+      height: 60px;
+      font-size: 1em;
+    }
+  
+    .download-button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .Paragraf {
+      font-size: 1.5em;
+    }
+  
+    .icon {
+      font-size: 1.2rem;
+      margin-right: 10px;
+    }
+  }
+  
   color: #dde116;
 }
 .App.light {
