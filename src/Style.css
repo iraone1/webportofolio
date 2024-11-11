@@ -200,6 +200,49 @@
     margin-right: 8px;
     color: #4a90e2; /* Customize icon color */
 }
+.large-icon {
+    font-size: 1.5rem; /* Adjust as desired */
+}
+.skill-list li {
+    font-size: 18px;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align items on both ends */
+}
+
+.skill-stars {
+    font-size: 18px;
+    color: gold; /* Set color of stars */
+    margin-left: auto; /* Push stars to the right */
+}
+
+.skill {
+    text-align: center;
+    justify-content: flex-end;
+    margin-top: -250px;
+    margin-left: 1170px;
+    z-index:10000 ;
+}
+
+.skill-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill-list li {
+    font-size: 18px;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.skill-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    
+}
+
 
 
 .arrow {
@@ -232,6 +275,7 @@
 .unstyled-link {
     color: inherit; /* Inherit color from parent */
     text-decoration: none; /* Remove underline */
+    font-size: large;
 }
 
 .unstyled-link:hover {

@@ -21,6 +21,11 @@ const Education = () => {
             </div>
             <section className="portfolio">
                 <MySaturn />
+                <div className="modal1-overlay" >
+                <div className="modal1-content">
+                    <p style={{fontWeight:'bolder'}}>Hello, my name is Muhammad Irawan. I am a computer science graduate. I was born in Kudus on June 7, 2000. I am a Muslim. I like space.</p>          
+                </div>
+            </div>
             </section>
         </div>
     );
